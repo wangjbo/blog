@@ -1,12 +1,8 @@
-const withCss = require('@zeit/next-css')
+const path = require('path')
 
-if(typeof require !== 'undefined'){
-    require.extensions['.css']=file=>{}
+
+module.exports = {
+  reactStrictMode: true,
+//   experimental: { styledComponents: true },
+  
 }
-
-module.exports = withCss({})
-
-
-// module.exports = {
-//   reactStrictMode: true,
-// }

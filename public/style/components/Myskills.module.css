@@ -1,0 +1,17 @@
+.main{
+    background-color: #fff;
+    justify-content: center;
+    color: rgb(179, 124, 124);
+    margin-top: .3rem;
+}
+
+.main > div{
+    height: 1.5rem;
+    justify-content: center;
+    text-align:center;
+}
+
+/* .js{
+    color: rgb(146, 96, 96);
+    justify-content: baseline;
+} */

@@ -1,0 +1,57 @@
+.listtitle{
+    font-size:1.3rem;
+    color: #1e90ff;
+    padding: 0 0.5rem;
+}
+.listcontext{
+    color:#777;
+    padding:.5rem;
+}
+.listicon{
+    padding:.5rem 0;
+    color:#AAA;
+    justify-content: center;
+    text-align: center;
+}
+.listicon span{
+    display: inline-block;
+    padding: 0 10px;
+}
+.breadDdiv{
+    padding: .5rem;
+    border-bottom:1px solid #eee;
+    /* background-color: #e1f0ff; */
+}
+.title{
+    /* justify-content: center; */
+    /* 文件居中 */
+    text-align:center;
+    font-size: 1.4rem;
+    color: #777;
+}
+.navTitle{
+    color: #777;
+    text-align: center;
+    height: 1rem;
+    line-height: 2rem;
+    font-size: 1rem;
+    padding-top: .3rem;
+    /* margin-bottom: rem; */
+}
+.navigation{
+    background-color: #fff;
+    font-size: 12px
+}
+
+.navContent > *{
+    line-height: 1.5rem;
+    margin-left: .7rem;
+    color: #777;
+}
+.navContent > *:hover{
+    color: #1e90ff;
+}
+
+.navDiv{
+    height: 2rem;
+}

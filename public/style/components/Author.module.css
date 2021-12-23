@@ -1,0 +1,14 @@
+.mainBody{
+    background-color: #fff;
+    height: 25rem;
+    text-align: center;
+}
+.socialMedium {
+    background-color: #fff;
+}
+
+.socialMedium>* {
+    font-size: 2rem;
+    padding-left: 1rem;
+    color: rgb(163, 168, 161);
+}
