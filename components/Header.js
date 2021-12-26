@@ -2,20 +2,17 @@ import React from 'react';
 import 'antd/dist/antd.css';
 import sty from '../public/style/components/header.module.css'
 import { Menu, Row, Col, } from 'antd';
-import { MailOutlined, CoffeeOutlined, HomeOutlined, BulbOutlined } from '@ant-design/icons';
+import { CoffeeOutlined, HomeOutlined, TagsOutlined, BulbOutlined} from '@ant-design/icons';
+import Link from 'next/link'
+import Router from 'next/router';
 
-
-const { SubMenu } = Menu;
 
 class Header extends React.Component {
     state = {
         current: 'mail',
     };
 
-    handleClick = e => {
-        console.log('click ', e);
-        this.setState({ current: e.key });
-    };
+
 
     render() {
         const { current } = this.state;
@@ -30,23 +27,33 @@ class Header extends React.Component {
                     </Col>
                     <Col xs={0} sm={0} md={14} lg={8} xl={8}>
                         <Menu className={sty.menu} mode='horizontal'>
-                            <Menu.Item className={sty.menuitem} key="index" icon={<HomeOutlined />} id={sty.juzhong}>
+                            <Menu.Item className={sty.menuitem} onClick={() => {
+                                Router.push('/List?id=1')
+                            }} key="index" icon={<HomeOutlined />} id={sty.juzhong}>
                                 个人主页
                             </Menu.Item>
-                            <Menu.Item className={sty.menuitem} key="interviewLeetcode" icon={<BulbOutlined />} id={sty.juzhong}>
+                            <Menu.Item className={sty.menuitem} onClick={() => {
+                                Router.push('/List?id=2')
+                            }} key="interviewLeetcode" icon={<BulbOutlined />} id={sty.juzhong}>
                                 刷题面经
                             </Menu.Item>
-                            <Menu.Item className={sty.menuitem} key="dailyLife" icon={<CoffeeOutlined />} >
+                            <Menu.Item className={sty.menuitem} onClick={() => {
+                                Router.push('/List?id=3')
+                            }}  key="dailyLife" icon={<CoffeeOutlined />} >
                                 精彩生活
                             </Menu.Item>
-                            <Menu.Item className={sty.menuitem} key="contact" icon={<MailOutlined />} >
-                                联系我们
+                            <Menu.Item className={sty.menuitem} onClick={() => {
+                                Router.push('/List?id=4')
+                            }}  key="contact" icon={<TagsOutlined />} >
+                                项目实战
                             </Menu.Item>
                         </Menu>
                     </Col>
                 </Row>
             </div>
         );
+    }
+    handleClick(id) {
     }
 }
 
