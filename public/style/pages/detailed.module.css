@@ -60,3 +60,19 @@
     margin-left: 2rem;
     margin-right: 2rem;
 }
+
+.mainContent img{
+    display: block;
+    margin: 15px auto;
+}
+.mainContent img{
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 15px auto;
+}
+.mainContent iframe {
+    display: block;
+    width: 100%;
+    margin:10px auto;
+}
